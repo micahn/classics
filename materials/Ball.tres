@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://shaders/Ball.gdshader" id="1_njuno"]
+
+[resource]
+shader = ExtResource("1_njuno")
+shader_parameter/in_color = Color(0.690196, 0.329412, 0.231373, 1)

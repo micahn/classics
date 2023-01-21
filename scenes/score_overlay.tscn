@@ -1,11 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://t3hbipyonqw7"]
+[gd_scene load_steps=4 format=3 uid="uid://cdsxay53bjagj"]
 
-[ext_resource type="Script" path="res://score_overlay.gd" id="1_83ffe"]
+[ext_resource type="Script" path="res://scripts/score_overlay.gd" id="1_83ffe"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_30evh"]
+[sub_resource type="LabelSettings" id="LabelSettings_vp5do"]
 font_size = 24
 
-[sub_resource type="LabelSettings" id="LabelSettings_rsdff"]
+[sub_resource type="LabelSettings" id="LabelSettings_205sp"]
 font_size = 24
 
 [node name="ScoreOverlay" type="Control"]
@@ -29,7 +29,7 @@ layout_mode = 0
 offset_right = 128.0
 offset_bottom = 64.0
 text = "SCORE:"
-label_settings = SubResource("LabelSettings_30evh")
+label_settings = SubResource("LabelSettings_vp5do")
 vertical_alignment = 1
 uppercase = true
 
@@ -39,7 +39,7 @@ offset_left = 128.0
 offset_right = 256.0
 offset_bottom = 64.0
 text = "0"
-label_settings = SubResource("LabelSettings_rsdff")
+label_settings = SubResource("LabelSettings_205sp")
 horizontal_alignment = 2
 vertical_alignment = 1
 uppercase = true

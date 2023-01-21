@@ -16,7 +16,7 @@ func _ready():
 	collision_mask = 1
 	if get_child_count() == 0:
 		colorRect = ColorRect.new()
-		colorRect.material = load("res://Ball.tres")
+		colorRect.material = load("res://materials/Ball.tres")
 		colorRect.size = Vector2(radius*2,radius*2)
 		colorRect.position = Vector2(-radius,-radius)
 		collider = CollisionShape2D.new()

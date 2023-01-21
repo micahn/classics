@@ -5,10 +5,7 @@ extends Node2D
 		left = val
 		_on_changed()
 		
-@export var paddleSpeed: int = 20:
-	set(val):
-		left = val
-		_on_changed()
+
 
 var paddle : Paddle 
 var paddle2 : Paddle
@@ -16,7 +13,7 @@ var paddle2 : Paddle
 var delay = 5.0;
 var delayTimer :=Timer.new()
 
-var scoreoverlay: ScoreOverlay = preload("res://score_overlay.tscn").instantiate()
+var scoreoverlay: ScoreOverlay = preload("res://scenes/score_overlay.tscn").instantiate()
 var score = 0.0
 
 
@@ -71,7 +68,7 @@ func _hit_players_wall(ball:Ball, collider:KinematicCollision2D):
 
 func autoSpawnBall():
 	spawnNewBall()
-	delayTimer.wait_time *= .9 
+	delayTimer.wait_time *= .95 
 	
 
 func spawnNewBall():

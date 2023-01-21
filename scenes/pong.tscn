@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlvkyoks17raw"]
+
+[ext_resource type="Script" path="res://scripts/Pong.gd" id="1_l5ry0"]
+[ext_resource type="Material" uid="uid://cwffkxe66tetu" path="res://materials/background.material" id="2_22aoy"]
+
+[node name="Pong" type="Node2D"]
+script = ExtResource("1_l5ry0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = ExtResource("2_22aoy")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

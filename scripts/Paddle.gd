@@ -15,7 +15,7 @@ var collider : CollisionShape2D
 func _ready():
 	if get_child_count() == 0:
 		colorRect = ColorRect.new()
-		colorRect.material = load("res://Paddle.tres")
+		colorRect.material = load("res://materials/Paddle.tres").duplicate()
 		colorRect.size = Vector2(width,height)
 		colorRect.position = Vector2(-width/2.0,-height/2.0)
 		
@@ -28,6 +28,7 @@ func _ready():
 
 func _init(b:Rect2):
 	bound = b
+	maxSpeed = b.size.y
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
