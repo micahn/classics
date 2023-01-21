@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhsn5tidehfsv"]
+
+[ext_resource type="Script" path="res://Paddle.gd" id="1_mimlo"]
+
+[node name="Paddle" type="StaticBody2D"]
+collision_mask = 3
+script = ExtResource("1_mimlo")
